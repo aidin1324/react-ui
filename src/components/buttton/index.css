@@ -1,0 +1,55 @@
+.my-button {
+    min-width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 200ms ease-in-out;
+    background-color: #f2f2f2;
+    color: #333;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.my-button:hover {
+    background-color: #e6e6e6;
+    color: #333;
+}
+
+.my-button--primary {
+    background-color: #007bff;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
+}
+
+.my-button--bordered {
+    border: 1px solid #007bff;
+    color: #007bff;
+    background-color: transparent;
+}
+
+.my-button--bordered:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.my-button--medium {
+    min-width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+.my-button--small {
+    min-width: 80px;
+    height: 20px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.my-button--large {
+    min-width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 20px;
+}
