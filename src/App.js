@@ -11,15 +11,15 @@ function App() {
       <h2>Button component</h2>
     </div>
     <div>
-      <Button variant="primary" size="large">large</Button>
-      <Button variant="primary">medium</Button>
-      <Button size="small" variant="primary">small</Button>
+      <Button variant="primary" size="large">lg, primary</Button>
+      <Button variant="primary">md, primary</Button>
+      <Button size="small" variant="primary">sm, primary</Button>
     </div>
 
     <div>
-      <Button variant="bordered" size="large">large</Button>
-      <Button variant="bordered">medium</Button>
-      <Button size="small" variant="bordered">small</Button>
+      <Button variant="bordered" size="large">lg, bordered</Button>
+      <Button variant="bordered">md, bordered</Button>
+      <Button size="small" variant="bordered">sm, bordered</Button>
     </div>
     <div className="flex">
       <h2>Input component</h2>
