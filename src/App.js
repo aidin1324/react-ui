@@ -1,6 +1,9 @@
 import Button from "./components/buttton/index.jsx";
 import Input from "./components/input/index.jsx";
 import Typography from "./components/typography/index.jsx";
+import Heading from "./components/heading/index.jsx";
+import Accordion from "./components/accordion/index.jsx";
+import Tooltip from "./components/tooltip/index.jsx";
 
 function App() {
   return <div style={{ display: "flex", flexDirection: "column" }}>
@@ -22,8 +25,8 @@ function App() {
       <h2>Input component</h2>
     </div>
     <div>
-      <Input label="Name" type="text" placeholder="Enter your name" />
-      <Input label="Number" type="number" placeholder="Enter your phone" />
+      <Input label="Name" type="text" value="Ivan Ivanov" placeholder="Enter your name" />
+      <Input label="Number" type="number" value="Focus" placeholder="Focus" />
       <Input danger label="Email" type="email" placeholder="Danger"/>
     </div>
     <div className="flex">
@@ -55,6 +58,38 @@ function App() {
       independent user account. For questions, contact us.
       </Typography>
     </div>
+  <div className="flex">
+    <h2>Heading component</h2>
+  </div>
+  <div>
+    <Heading level={1} className="heading">H1. Heading 1</Heading>
+    <Heading level={2} className="heading">H2. Heading 2</Heading>
+    <Heading level={3} className="heading">H3. Heading 3</Heading>
+    <Heading level={4} className="heading">H4. Heading 4</Heading>
+    <Heading level={5} className="heading">H5. Heading 5</Heading>
+    <Heading level={6} className="heading">H6. Heading 6</Heading>
+  </div>
+  
+  <div className="flex-column-center">
+    <Tooltip text="I am a tooltip">Tooltip Top</Tooltip>
+    <Tooltip text="I am a tooltip" position="left">Tooltip Left</Tooltip>
+    <Tooltip text="I am a tooltip" position="right">Tooltip Right</Tooltip>
+    <Tooltip text="I am a tooltip" position="bottom">Tooltip Bottom</Tooltip>
+  </div>
+  <div className="flex-column-start">
+    <Accordion title="Accordion">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+    aliquip ex ea commodo consequat.
+    </Accordion>
+    <Accordion title="Accordion Expanded" defaultOpen>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+    aliquip ex ea commodo consequat.
+    </Accordion>
+  </div>
   </div>;
   
 }

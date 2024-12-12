@@ -7,12 +7,12 @@
   visibility: hidden;
   opacity: 0;
   width: 120px;
-  background-color: #555;
+  background-color: #007bff; 
   color: #fff;
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s, background-color 200ms ease-in-out;
   position: absolute;
   z-index: 1;
 }
@@ -20,6 +20,7 @@
 .tooltip-container:hover .tooltip-text {
   visibility: visible;
   opacity: 1;
+  background-color: #007bff; 
 }
 
 .tooltip-text--top {

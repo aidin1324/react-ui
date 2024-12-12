@@ -10,7 +10,8 @@ function Accordion(props) {
   return (
     <div className="accordion">
       <div className="accordion-header" onClick={toggleAccordion}>
-        {title}
+        <h2 className="accordion-title">{title}</h2>
+        <span className="accordion-icon">{isOpen ? '−' : '+'}</span>
       </div>
       {isOpen && <div className="accordion-content">{children}</div>}
     </div>
